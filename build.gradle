@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+}
+
+group = 'com.merchant'
+version = '1.0'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+	
+	compile group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+	compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure-processor', version: '2.3.3.RELEASE'
+	
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE'
+	implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+}
