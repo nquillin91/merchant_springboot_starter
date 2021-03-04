@@ -77,6 +77,7 @@ public class AffirmService {
 	}
 	
 	private boolean validateAuthResponse(AffirmAuthResponse authResponse) {
+		// Add in custom validation logic to pass back the correct boolean
 		return true;
 	}
 }
